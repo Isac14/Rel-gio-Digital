@@ -12,6 +12,8 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
+    user-select: none;
+    gap: 5px;
 }
 
 .time-format{
@@ -19,8 +21,25 @@ main{
     background-color: aqua;
     padding: 15px;
     border-radius: 20px;
+    width: 10%;
+    text-align: center;
 }
 
 span{
     font-size: 8rem;
+}
+
+@media screen and (max-width: 900px) and (max-height: 1200px){
+    .time-format{
+        font-size: 2.5rem;
+        background-color: aqua;
+        padding: 15px;
+        border-radius: 20px;
+        width: 15%;
+        text-align: center;
+    }
+    
+    span{
+        font-size: 2.5rem;
+    }
 }
